@@ -47,6 +47,8 @@ public class SecurityConfig {
 
                         // Strictly public — registration & login only
                         .requestMatchers(
+                                "/",
+                                "/health",
                                 "/api/user",
                                 "/api/user/login",
                                 "/api/mechanic",
